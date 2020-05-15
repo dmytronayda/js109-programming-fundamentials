@@ -47,15 +47,16 @@ var smallerNumbersThanCurrent = function(nums) {
 
 console.log(smallerNumbersThanCurrent([4, 1, 1, 3, 5])) // [3, 0, 0 , 2, 4]
 console.log(smallerNumbersThanCurrent([2, 1])) // [1, 0]
-console.log(smallerNumbersThanCurrent([2, 101])) // Invalid input
-console.log(smallerNumbersThanCurrent([7, 7, 7, 7, 7, 7, 7])) // Invalid input
+console.log(smallerNumbersThanCurrent([2, 101])) // undefined
+console.log(smallerNumbersThanCurrent([7, 7, 7, 7, 7, 7, 7])) // [ 0, 0, 0, 0, 0, 0, 0 ]
 
 /**
  * On line 25 function `validInput` is declared with one parameter `array`. 
- * On line 26, if statement is declared. The condition of the if statement checks if `array` argument length is within 
- * exercise limits. If it is and all array elements are within limits too, it returns `true` which is a truthy value.
+ * On line 26, if statement is declared. The condition of the if statement checks if `array` argument's length is within 
+ * exercise limits. If it is AND all array elements are within limits too, it returns `true` which is a truthy value.
  * 
  * On line 34, `smallerNumbersThanCurrent` function expression is defined with one parameter `nums`. 
+ * 
  * On line 25, if statement is declared. The condition of the if statement checks if return value of invoking `validInput` function with `nums`
  * is truthy.
  * If `nums` is a valid input: 

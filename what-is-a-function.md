@@ -12,7 +12,7 @@
 A function in JavaScript can be considered as a 'procedure'. A function has a **unique name**, a collection of **statements** that may be invoked (0 or more times), may be provided some **inputs**, and may give back one or more **outputs**.
 
 ## How to define a function? 
-A function is defined with a special keyword `function` followed by a function name and a pair of parentheses `()`. Inputs that may be provided to a function are placed between the curly braces. These inputs in the function definition are called parameters. A set of statements that function executes is placed between the curly braces.
+A function is defined with a special keyword `function` followed by a function name and a pair of parentheses `()`. Inputs that may be provided to a function are placed between the parentheses. These inputs in the function definition are called parameters. A set of statements that function executes is placed between the curly braces.
 
 Here's an example of **function declaration**:
 
@@ -84,7 +84,7 @@ doStuff(arg1, arg2, arg3); // function `doStuff` is invoked with 3 arguments: `a
 
 There's no minimum or maximum required number of arguments to be passed into the function. Arguments are optional and can be omitted from the function invocation altogether.
 
-In case a function is called without any arguments but it was defined with some parameters, the function passes the dafault value of `undefined` for each missing argument.
+If a function is called without arguments but was defined with parameters, the parameters get assigned to `undefined` unless they have a default value.
 
 ```js
 function checkInput(param1, param2) {
@@ -100,7 +100,7 @@ console.log(checkInput('argument1')); // prints string 'undefined'
 
 The local variable names, which are written between parantheses while defining a function, are called **parameters**. There may be 0 or more parameters.
 
-On contrary, the local variable names that are written in the function body or passed with a function invocation are called **arguments**
+On the other hand, the parameter values that are written in the function body or passed with a function invocation are called **arguments**
 
 ![distinction between parameters and arguments](./parameterVsArgument.png)
 
@@ -112,7 +112,7 @@ If invoked, function always have some return value.
 To get a explicit return value, function body should include the `return` keyword followed by a variable name with a value or specific value you want to return.
 
 <span style="background-color: #20A4BC">
-In case a value to `return` is not specified explicitly, function will implicitly return `undefined`.
+In case a value to `return` is not specified explicitly, the function will return `undefined`.
 </span>
 
 Oftentimes, you need your function to make some operations and print the result to the console using `console.log()` function call. It worth noting that in this case your function invocation outputs the message to the console and returns `undefined` too.
